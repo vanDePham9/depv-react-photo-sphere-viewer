@@ -16,6 +16,7 @@ import {
 import "./styles.css"
 import "@photo-sphere-viewer/core/index.css"
 import { AutorotatePlugin, AutorotatePluginConfig } from "@photo-sphere-viewer/autorotate-plugin"
+import { OverlaysPlugin, events } from "@photo-sphere-viewer/overlays-plugin"
 import { MarkersPlugin, MarkersPluginConfig } from "@photo-sphere-viewer/markers-plugin"
 import { CompassPlugin, CompassPluginConfig } from "@photo-sphere-viewer/compass-plugin"
 import { GalleryPlugin, GalleryPluginConfig } from "@photo-sphere-viewer/gallery-plugin"
@@ -522,5 +523,7 @@ export {
     EquirectangularTilesAdapter, EquirectangularTilesAdapterConfig,
     EquirectangularVideoAdapter, EquirectangularVideoAdapterConfig,
     AbstractPlugin, AbstractAdapter,
-    LensflarePlugin
+    LensflarePlugin,
+    OverlaysPlugin,
+    events
 }

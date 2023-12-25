@@ -37,7 +37,7 @@
     "dependencies": {
         "@photo-sphere-viewer/autorotate-plugin": "^5.4.4",
         "@photo-sphere-viewer/compass-plugin": "^5.4.4",
-        "@photo-sphere-viewer/core": "^5.4.4",
+        "@photo-sphere-viewer/core": "^5.5.1",
         "@photo-sphere-viewer/cubemap-adapter": "^5.4.4",
         "@photo-sphere-viewer/cubemap-tiles-adapter": "^5.4.4",
         "@photo-sphere-viewer/cubemap-video-adapter": "^5.4.4",
@@ -47,6 +47,7 @@
         "@photo-sphere-viewer/gyroscope-plugin": "^5.4.4",
         "@photo-sphere-viewer/map-plugin": "^5.4.4",
         "@photo-sphere-viewer/markers-plugin": "^5.4.4",
+        "@photo-sphere-viewer/overlays-plugin": "^5.5.1",
         "@photo-sphere-viewer/resolution-plugin": "^5.4.4",
         "@photo-sphere-viewer/settings-plugin": "^5.4.4",
         "@photo-sphere-viewer/stereo-plugin": "^5.4.4",
