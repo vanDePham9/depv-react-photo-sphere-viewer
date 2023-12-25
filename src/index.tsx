@@ -154,8 +154,8 @@ export interface ViewerAPI {
     setOptions(options: ViewerConfig): void;
     getCurrentNavbar(): (string | object)[] | void;
     zoom(value: number): void;
-    zoomIn(): void;
-    zoomOut(): void;
+    zoomIn(value: number): void;
+    zoomOut(value: number): void;
     resize(size: CssSize): void;
     enterFullscreen(): void;
     exitFullscreen(): void;
@@ -378,10 +378,10 @@ const ReactPhotoSphereViewer = forwardRef<ViewerAPI, Props>((props, ref): React.
                 _c.setOption(option, value)
             }).on("zoom", (zoom: number) => {
                 _c.zoom(zoom)
-            }).on("zoomIn", () => {
-                _c.zoomIn()
-            }).on("zoomOut", () => {
-                _c.zoomOut()
+            }).on("zoomIn", (zoom: number) => {
+                _c.zoomIn(zoom)
+            }).on("zoomOut", (zoom: number) => {
+                _c.zoomOut(zoom)
             }).on("startAutoRotate", () => {
                 const p = _c.getPlugin("autorotate") as AutorotatePlugin
                 if (p) p.start()
@@ -425,11 +425,11 @@ const ReactPhotoSphereViewer = forwardRef<ViewerAPI, Props>((props, ref): React.
         zoom(value: number) {
             Emitter.emit("zoom", value)
         },
-        zoomIn() {
-            Emitter.emit("zoomIn", {})
+        zoomIn(value: number) {
+            Emitter.emit("zoomIn", value)
         },
-        zoomOut() {
-            Emitter.emit("zoomOut", {})
+        zoomOut(value: number) {
+            Emitter.emit("zoomOut", value)
         },
         resize(size: CssSize) {
             return spherePlayerInstance.current?.resize(size)
