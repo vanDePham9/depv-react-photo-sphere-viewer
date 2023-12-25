@@ -1,6 +1,6 @@
 {
     "name": "depv-react-photo-sphere-viewer",
-    "version": "5.5.1",
+    "version": "5.5.2",
     "description": "Photosphere Viewer for React.JS, wrapper of photo-sphere-viewer.js",
     "author": "Elius94",
     "license": "MIT",
